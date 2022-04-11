@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 2</title>
+</head>
+<body>
+    <h1>¿Qué es Javascript y en qué se asemeja a Java?</h1>
+    <br>
+    <p>
+     Java y JavaScript solo comparten un origen común procedente del lenguaje C, como muchos otros lenguajes de programación. Cada uno tiene sus ventajas e inconvenientes que cada cual puede defender o rechazar. De cualquier modo, como ocurre con los idiomas, realmente no hay un lenguaje de programación que sea mejor que otro. 
+     <br>
+     Las caracteristicas de cada uno son:
+
+        <ul>
+            <li>JavaScript tradicionalmente ha sido un lenguaje interpretado, y Java es compilado. </li>
+        	<li>Java se depura en dos fases y JavaScript en una. </li>
+        	<li>Java es un lenguaje orientado a objetos puro, pero JavaScript está basado en prototipos. </li>
+        	<li>Java es fuertemente tipado, y JavaScript es débilmente tipado.</li>
+        	<li>Java tiene ámbito por bloque y JavaScript lo tiene por función.</li>
+        	<li>JavaScript tiene clausuras, Java las acaba de incorporar. </li>
+        	<li>Las funciones en JavaScript son multi-argumento siempre. En Java es necesario indicarlo.</li>
+        	<li>JavaScript es estándar, Java no. 
+        </ul>
+     
+    </p>
+
+    <script>
+
+        //---------------Declaracion---------------------
+
+        var num1=2, num2=5;
+        let frase1 = "Johan", frase2 = " Infante";
+        const var1 = true, var2 = "String";
+        var obj = {
+            numero: 2,
+            palabra: 'SrJohanes',
+            booleano: true,
+            objeto: {},
+        };
+
+        // --------------Resultados----------------------
+        // Operaciones Aritmeticas
+        
+        console.log("la suma es: " + (num1+num2));
+        console.log("la resta es: " + (num1-num2));
+        console.log("la multipliación es: " + (num1*num2));
+        console.log("la división es: " + (num1/num2));
+
+        //concatenación.
+        
+        console.log("resultado es: " + frase1 + frase2);
+        
+        
+        // Tipo de dato.
+        
+        console.log("tipo de dato de var1: " + typeof var1);
+        console.log("tipo de dato de var2: " + typeof var2);
+        
+        // Variable tipo objeto.
+       
+        console.table(obj);
+
+    </script>
+</body>
+</html>
