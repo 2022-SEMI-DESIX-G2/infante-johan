@@ -99,6 +99,16 @@ input {
   caret-color: #148EB2;
 }
 
+input:invalid{
+  animation: shake 300ms;
+}
+
+@keyframes shake{
+  25%{transform: translateX(4px);}
+  50%{transform: translateX(-4px);}
+  75%{transform: translateX(4px);}
+}
+
 #submit {
   color: #39B3D9;
   text-shadow: 1px 1px 8px #fff;
@@ -164,3 +174,18 @@ text-align: center;
 top: 20%;
 text-shadow: 0 0 1px rgba(0,0,0,.1);
 }
+
+#borrar{
+  color: rgb(246, 85, 85);
+  display: none;
+}
+
+.cards:hover #borrar{
+  display: block;
+} 
+
+#borrar:hover{
+  animation: shake 1200ms;
+  color: rgb(215, 51, 51);
+
+} 
