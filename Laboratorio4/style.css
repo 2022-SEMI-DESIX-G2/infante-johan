@@ -132,11 +132,13 @@ input:invalid{
 
 .Display {
   display: flex;
-  height: 330px;
+  flex-wrap: wrap;
+  width: 99%;
+  height: auto;
   margin: 0 auto;
   margin-top: 8px;
-  width: 98%;
   background-color: white;
+  
 }
 
 .cards{

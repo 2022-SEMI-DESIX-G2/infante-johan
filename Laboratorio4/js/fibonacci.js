@@ -20,11 +20,11 @@
                 b = c;
                 CardDisplay.innerHTML +=
                 `
-                <div class="cards" id="card">
-                    <img src="img/abstracto_aquaMarina.jpg" alt="" class="cards-image">
-                    <h3 class="card-title">${title}</h3>
-                    <h3 id="borrar" class="card-title"><i class="fa-solid fa-trash-can"></i></h3>
-                </div>`;
+                    <div class="cards" id="card${i}">
+                        <img src="img/abstracto_aquaMarina.jpg" alt="" class="cards-image">
+                        <h3 class="card-title">${title}</h3>
+                        <h3 id="borrar" class="card-title"><i class="fa-solid fa-trash-can" id=card${i}></i></h3>
+                    </div>`;
             }
         }
         else{
@@ -34,10 +34,11 @@
 
     const DisplayClick = (e) => {
         const event = e.target;
-        const tarjeta = document.getElementById('card')
 
         if(event.nodeName=="I")
         {
+            const tarjeta = document.getElementById(event.id);
+
             alertify.confirm("¿Esta seguro de que desea eliminar esta tarjeta?",
             function() {
                 alertify.success('Tarjeta Eliminada.');
