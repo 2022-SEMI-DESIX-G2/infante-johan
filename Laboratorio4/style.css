@@ -1,5 +1,8 @@
 @import url('https://rsms.me/inter/inter-ui.css');
 
+
+/* Configuracion General */
+
 body {
   background: #d6f7f9;
   font-family: 'Inter UI', sans-serif;
@@ -7,9 +10,11 @@ body {
   padding: 20px;
 }
 
+/* Estilo para el Formulario */
+
 .container {
   display: flex;
-  height: 250px;
+  height: 230px;
   margin: 0 auto;
   width: 580px;
 }
@@ -91,6 +96,7 @@ input {
   line-height: 30px;
   outline: none !important;
   width: 100%;
+  caret-color: #148EB2;
 }
 
 #submit {
@@ -110,4 +116,51 @@ input {
 
 #submit:active {
   color: #d66745;
+}
+
+/* Resultado de las Cartas Fibonacci */
+
+.Display {
+  display: flex;
+  height: 330px;
+  margin: 0 auto;
+  margin-top: 8px;
+  width: 98%;
+  background-color: white;
+}
+
+.cards{
+  width: 150px;
+  height: 200px;
+  background-color: #333;
+  border-radius: 10px;
+  outline: 1px solid rgba(255,255,255,0.5);
+  outline-offset: -8px;
+  box-shadow: 3px,3px,10px,rgba(0,0,0,0.1);
+  position: relative;
+  overflow: hidden;
+  margin: 8px;
+}
+
+.cards-image{
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+opacity: .6;
+transition: transform .75s;
+}
+
+.cards:hover .cards-image{
+transform: scale(1.5);
+} 
+
+.card-title{
+position:relative;
+color: 	#FFDB58;
+font-size: 30px;
+text-align: center;
+top: 20%;
+text-shadow: 0 0 1px rgba(0,0,0,.1);
 }
