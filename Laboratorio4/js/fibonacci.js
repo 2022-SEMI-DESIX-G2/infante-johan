@@ -26,9 +26,10 @@
                         <h3 id="borrar" class="card-title"><i class="fa-solid fa-trash-can" id=card${i}></i></h3>
                     </div>`;
             }
+            alertify.success('Fibonacci Generado.');
         }
         else{
-            alertify.alert("Porfavor solo introduzca valores positivos.", function(){alertify.error('Error');});
+            alertify.alert("Porfavor solo introduzca valores positivos.", function(){alertify.error('Error: Valor Negativo');});
         }
     };
 
@@ -45,7 +46,7 @@
                 CardDisplay.removeChild(tarjeta)
             },
             function() {
-                alertify.error('Cancelado');
+                alertify.error('Cancelado.');
             });
         }
         
