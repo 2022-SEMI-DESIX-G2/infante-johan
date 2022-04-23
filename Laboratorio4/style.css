@@ -1,0 +1,113 @@
+@import url('https://rsms.me/inter/inter-ui.css');
+
+body {
+  background: #d6f7f9;
+  font-family: 'Inter UI', sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  height: 250px;
+  margin: 0 auto;
+  width: 580px;
+}
+
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    height: 630px;
+    width: 320px;
+  }
+}
+
+.left {
+  background: white;
+  height: calc(100% - 40px);
+  top: 20px;
+  position: relative;
+  width: 50%;
+}
+
+@media (max-width: 767px) {
+  .left {
+    height: 100%;
+    left: 20px;
+    width: calc(100% - 40px);
+    max-height: 270px;
+  }
+}
+
+.titulo {
+  font-size: 30px;
+  font-weight: 900;
+  margin: 50px 40px 40px;
+}
+
+.descripcion {
+  color: #69DCFF;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 40px;
+}
+
+.right {
+  background: #14e1a0;
+  box-shadow: 0px 0px 40px 16px rgba(0,0,0,0.22);
+  color: #ffffff;
+  position: relative;
+  width: 50%;
+}
+
+@media (max-width: 767px) {
+  .right {
+    flex-shrink: 0;
+    height: 100%;
+    width: 100%;
+    max-height: 350px;
+  }
+}
+
+form {
+  margin: 40px;
+  position: absolute;
+}
+
+label {
+  color:  #ffffff;
+  display: block;
+  font-size: 16px;
+  height: 16px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+input {
+  border: 0;
+  color: #797878;
+  font-size: 20px;
+  height: 30px;
+  line-height: 30px;
+  outline: none !important;
+  width: 100%;
+}
+
+#submit {
+  color: #39B3D9;
+  text-shadow: 1px 1px 8px #fff;
+  background-color: transparent;
+  margin-top: 40px;
+  transition: color 300ms;
+  font-weight: 500px;
+}
+
+#submit:hover {
+    color: #148EB2;
+    font-size: 30px;
+    transition: font-size 300ms;
+  }
+
+#submit:active {
+  color: #d66745;
+}
