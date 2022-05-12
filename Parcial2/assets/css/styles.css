@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700;800&display=swap');
+body {
+    position: fixed;
+    background-color: #061b2cfa;
+    background-attachment: fixed;
+}
+
+a {
+    display: none;
+}
+
+h1,
+h3,
+h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+
+h3 {
+    font-size: 1.4;
+    font-weight: bolder;
+}
+
+h4 {
+    font-size: 1.2rem;
+    padding-top: 1rem;
+}
+
+p {
+    color: #3a3a3a;
+    margin-block-start: 0.5rem;
+    font-weight: 0.5rem;
+    font-size: 0.9rem;
+}
+
+form {
+    width: 100%;
+    margin-right: 0;
+    padding: 0;
+    margin: 0;
+}
+
+label {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+
+input,
+select {
+    border: none;
+    background-color: #3a3a3a1f;
+    padding: 6px 0;
+    border-radius: 0.2rem;
+}
+
+select {
+    padding: 5px 0;
+}
+
+input,
+select:focus {
+    outline: 0;
+}
+
+ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.section-form {
+    width: 100%;
+    padding: 40px;
+    padding-bottom: 0;
+}
+
+.container {
+    position: relative;
+    height: auto;
+    width: 33%;
+    margin: 0 23rem;
+    margin-top: 3rem;
+    border-radius: 10px;
+    background: #ffffffff;
+    padding: 2rem 3rem;
+    padding-bottom: 1rem;
+}
+
+.logo {
+    position: absolute;
+    left: 8.7rem;
+    top: -4.3rem;
+}
+
+.form-container {
+    display: flex;
+}
+
+.data-form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.data-form>input {
+    max-width: 12rem;
+}
+
+.data-form>select {
+    max-width: 11rem;
+}
+
+.second-data-form {
+    padding-left: 0.8rem;
+}
+
+.buttons-form {
+    width: 94%;
+    margin-top: 1.3rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.buttons-form>button {
+    background-color: rgba(13, 153, 255, 1);
+    border: none;
+    width: 30%;
+    border-radius: 0.2rem;
+    padding: 0.3rem;
+    color: #ffffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.clean-button-hidden {
+    display: none;
+}
+
+.clean-button-visible {
+    display: block;
+}
+
+.buttons-form-visible-buttons {
+    flex-direction: row;
+}
+
+.img-baby {
+    height: 0.9rem;
+    width: 0.9rem;
+}
+
+.img-not-found {
+    height: 10rem;
+    width: 10rem;
+}
+
+.scroll-container {
+    display: block;
+    width: 25rem;
+    min-height: 8rem;
+    max-height: 8rem;
+    overflow: auto;
+    overflow-y: auto;
+    scroll-behavior: auto;
+}
+
+.scroll-evolutions {
+    width: auto;
+}
+
+.err {
+    color: red;
+    font-weight: bold;
+    font-size: 0.7rem;
+}
