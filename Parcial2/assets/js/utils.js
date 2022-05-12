@@ -10,7 +10,7 @@
             getSearch: ({ inputValue, typeValue = 'pokemon' }) => Utils.methods.fetch({ url: Utils.methods.getFormattedBackendUrl({ inputValue, typeValue }), typeValue }),
 
             fetch: async({ url, typeValue }) => {
-                console.log(url);
+
                 try {
                     const rawResponse = await fetch(url);
                     if (rawResponse.status !== 200) throw new Error(`${typeValue} not found`);
@@ -22,8 +22,6 @@
 
             getEvolutionChain: async url => {
                 let arrSearch = Utils.methods.getArrSearch(url)
-
-                console.log(arrSearch[1]);
 
                 let { evolution_chain } = await Utils.methods.getSearch({ inputValue: arrSearch[0], typeValue: arrSearch[1] })
                 arrSearch = Utils.methods.getArrSearch(evolution_chain.url)

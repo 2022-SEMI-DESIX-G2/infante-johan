@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700;800&display=swap');
 body {
-    position: fixed;
     background-color: #061b2cfa;
     background-attachment: fixed;
 }
@@ -179,4 +178,34 @@ ul {
     color: red;
     font-weight: bold;
     font-size: 0.7rem;
+}
+
+.section-stats {
+    width: 100%;
+    padding: 40px;
+    padding-top: 0;
+}
+
+.container-stats {
+    margin-top: 1.5rem;
+    padding: 1.5rem 3rem;
+}
+
+.sprites {
+    height: 50px;
+    width: 50px;
+    margin-inline-end: 0;
+    margin-inline-start: 0;
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+
+.weight-height {
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+.container-asides {
+    display: flex;
+    justify-content: space-between;
 }
