@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Parcial #2</title>
+</head>
+
+<body>
+
+    <section id="section-form" class="section-form">
+        <section class="container">
+            <img class="logo" src="https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png">
+            <h1>Buscador de pokemones</h1>
+            <p>Busca desde pokemones hasta las habilidades de los mismos.</p>
+
+            <form id="pokemon-finder-form" action="" method="post">
+
+                <section class="form-container">
+
+                    <section class="data-form">
+                        <label for="search">Buscar</label>
+                        <input type="text" name="search" id="input-query">
+                        <div id="error-input"></div>
+                    </section>
+
+                    <section class="data-form second-data-form">
+                        <label class="label-search" for="searchType">Tipo de Busqueda</label>
+                        <select name="searchType" id="select-type">
+                            <option value="default" selected></option>
+                            <option value="pokemon">Por pokémon</option>
+                            <option value="ability">Por habilitad</option>
+                        </select>
+                        <div id="error-type"></div>
+                    </section>
+
+                </section>
+
+                <section class="buttons-form" id="buttons-form">
+                    <button type="button" class="clean-button-hidden" id="clean-button">Limpiar</button>
+                    <button type="submit">Buscar</button>
+                </section>
+
+            </form>
+        </section>
+
+    </section>
+
+    <section id="section-stats-response" class="section-stats"></section>
+
+
+    <script src="./assets/js/utils.js"></script>
+    <script src="./assets/js/index.js"></script>
+
+</body>
+
+</html>
