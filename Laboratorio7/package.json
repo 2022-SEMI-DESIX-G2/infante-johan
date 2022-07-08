@@ -1,0 +1,16 @@
+{
+  "name": "laboratorio7",
+  "version": "1.0.0",
+  "description": "Laboratorio7",
+  "main": "app.js",
+  "dependencies": {
+    "axios": "^0.27.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node app.js"
+  },
+  "author": "Johan Infante",
+  "license": "ISC"
+}
