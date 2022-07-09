@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="formulario">
+
+        <div class="logo">
+            <img src="image.png" />
+        </div>
+        <h1>Buscador de pokemones</h1>
+        <p>Busca desde pokemones hasta las habilidades de los mismos.</p>
+        <form id="pokemon-form">
+
+
+            <div class="buscador">
+                <div class="busqueda">
+                    <label for="pokemon-input">Nombre</label>
+                    <input id="pokemon-input" type="text" value="" placeholder="Buscar un Pokemon...">
+                </div>
+                <div class="opciones">
+                    <div class="opcion">
+                        <input type="checkbox" id="ver-sprites">
+                        <label for="ver-sprites"> Sprites</label>
+                    </div>
+                    <div class="opcion">
+                        <input type="checkbox" id="ver-ubicaciones">
+                        <label for="ver-ubicaciones">Ubicaciones </label>
+                    </div>
+                    <div class="opcion">
+                        <input type="checkbox" id="ver-evolucion">
+                        <label for="ver-evolucion">Evolucion</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accion">
+                <div id="resetForm">
+                </div>
+                <div class="buscador-button" id="buscador-button">
+                    <button type="submit">Buscar</button>
+                </div>
+            </div>
+        </form>
+    </section>
+    <section id="pokemon-response"></section>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,236 @@
+html {
+    background: #031926;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 20px;
+    width: 700px;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+.logo {
+    position: absolute;
+    width: 100%;
+}
+
+.logo img {
+    position: relative;
+    top: -85px;
+    left: 150px;
+    width: 257px;
+    height: 103px;
+    text-align: center;
+}
+
+.logo-git {
+    position: absolute;
+    left: 97.57%;
+    right: 1.98%;
+    top: 1.78%;
+    bottom: 97.03%;
+}
+
+section.formulario {
+    margin-top: 100px;
+    padding: 14px 47px;
+    background: white;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+section#pokemon-response .carta {
+    margin-top: 25px;
+    padding: 14px 47px;
+    background: white;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#pokemon-response h1 {
+    margin-top: 17px;
+    font-size: 24px;
+    text-transform: capitalize;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 22px;
+}
+
+#pokemon-response h3 {
+    margin-bottom: 4px;
+    margin-top: 4px;
+}
+
+.svgEye {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    margin: 1px 0 0 5px;
+}
+
+.svgBaby {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    margin: 1px 0 0 5px;
+}
+
+.formulario h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buscador div.w-50,
+.info .columna {
+    width: 218px;
+}
+
+.buscador div.w-100 {
+    width: 442px;
+}
+
+.buscador label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.busqueda input {
+    width: 100%;
+    background: #e8e8e8;
+    border-radius: 5px;
+    border: none;
+    line-height: 14px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.accion {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.accion button {
+    background-color: #19a5f8;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    line-height: 14px;
+    padding: 7px;
+    width: 108px;
+    font-size: 16px;
+}
+
+h1.error {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px 0px;
+}
+
+h1.error span {
+    margin-right: 10px;
+}
+
+.listado {
+    padding-left: 20px;
+    padding-top: 0;
+    margin-top: 0;
+    text-transform: capitalize;
+}
+
+.sprite {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    margin: -6px;
+}
+
+.tabla_encounters {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 16px;
+}
+
+.tabla_encounters th {
+    border-bottom: 2px solid #19a5f8;
+    padding: 4px 6px;
+    text-align: left;
+}
+
+.tabla_encounters td {
+    border-bottom: 1px solid #ddd;
+    padding: 4px 6px;
+}
+
+.tabla_encounters td.ubicacion {
+    background-color: #ccc;
+    font-weight: bold;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.buscador .busqueda {
+    margin-bottom: 12px;
+}
+
+.buscador .opciones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buscador .opciones .opcion {
+    display: flex;
+    justify-content: start;
+    width: 30%;
+}
+
+.opcion input {
+    margin-right: 12px;
+}
+
+.sprites_list {
+    min-width: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.sprites_list li {
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+.sprites_list img {
+    width: 100px;
+    height: 100px;
+    margin: -6px;
+}
+
+.clear {
+    clear: both;
+}
+
+.seccion {
+    border-top: 1px #19a5f8 dashed;
+    margin-top: 20px;
+    padding-top: 20px;
+}
